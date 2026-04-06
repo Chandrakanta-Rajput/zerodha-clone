@@ -8,8 +8,8 @@ const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
    useEffect(() => {
-     axios.get("http://localhost:3002/allHoldings").then((res) => {
-        console.log(res.data);
+     axios.get("http://65.2.38.33:3002/allHoldings").then((res) => {
+         console.log(res.data);
       setAllHoldings(res.data);
     });
   }, []);
@@ -109,3 +109,8 @@ const Holdings = () => {
 };
 
 export default Holdings;
+
+
+
+
+// "http://localhost:3002/allHoldings"
