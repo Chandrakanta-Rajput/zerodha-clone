@@ -12,7 +12,7 @@ const BuyActionWindow = ({ uid }) => {
   const [stockPrice, setStockPrice] = useState(0.0);
 
   const handleBuyClick = () => {
-    axios.post("http://13.233.106.209:3002/newOrder", {
+    axios.post("http://65.2.38.33:3002/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
